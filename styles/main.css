@@ -1,0 +1,153 @@
+/* custom property */
+:root {
+	--accent-color: #800000;
+	--gradient-color: #f6bb73;
+}
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* default styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 800px;
+	margin: auto;
+	border: 2px solid var(--accent-color);
+}
+
+a:hover, a:focus{
+	font-style: italic;
+	color: var(--accent-color);
+}
+h1, h2, h3, p, ul {
+	padding: .5em 0;
+}
+h1 {
+	font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
+    border-bottom: 2px solid var(--accent-color);
+}
+h2 {
+	font-size: 130%;
+	color: var(--accent-color);
+}
+h3 {
+	font-size: 105%;
+}
+ul {
+	margin-left: 2em;
+}
+
+/* the styles for the header */
+header {
+	border-bottom: 2px solid var(--accent-color);
+	background-image: linear-gradient(
+	    30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
+	& h2 {
+		font-size: 175%;
+		padding: .5em 0 0 0;
+	}
+	& h3 {
+		font-size: 130%;
+		font-style: italic;
+		padding-bottom: 1em;
+	}
+	& img {
+		float: right;
+		margin: .75em 1em;
+	}
+}
+
+/* the styles for the main content */
+main {
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+
+    & blockquote {
+        font-style: italic;
+        padding-left: 1em;
+    }
+
+    & section {
+        width: 525px;
+        float: right;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+
+    }
+
+    & aside {
+        width: 215px;
+        float: left;
+        padding-left: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    & section h2, aside h2 {
+        font-size: 130%;
+        color: var(--accent-color);
+    }
+
+    & article.featured img {
+        float: right;
+        margin: .5em 0 .5em .5em;
+        border: 1px solid #000;
+        border-radius: 0;
+
+
+    }
+}
+/* the styles for the footer */
+footer {
+	background-color: var(--accent-color);
+    clear: both;
+	& p {
+		text-align: center;
+		color: white;
+		padding: 1em 0;
+
+	}
+}
+
+/* CSS class */
+.large {
+	font-size: 125%;
+}
+
+section.speaker h1 {
+    color: var(--accent-color);
+    margin: 0 0 .25em 0;
+}
+
+section.speaker h2 {
+    color: #000;
+    font-size: 115%;
+    margin: 0 0 .5em 0;
+}
+
+section.speaker p {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+section.speaker article img {
+    float: right;
+    margin: 0 0 10px 10px;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+article.featured {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
