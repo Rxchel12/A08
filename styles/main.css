@@ -93,7 +93,7 @@ main {
 
     }
 
-    & section h2, aside h2 {
+    & section h2, & aside h2 {
         font-size: 130%;
         color: var(--accent-color);
     }
@@ -103,8 +103,6 @@ main {
         margin: .5em 0 .5em .5em;
         border: 1px solid #000;
         border-radius: 0;
-
-
     }
 }
 /* the styles for the footer */
@@ -150,4 +148,7 @@ article.featured {
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+section.speaker h1 {
+    border-bottom: none;
 }
